@@ -1,4 +1,4 @@
-# section10
+# Quotes app
 
 > A Vue.js project
 
