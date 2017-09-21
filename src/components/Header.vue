@@ -1,0 +1,27 @@
+<template>
+	<div class="row">
+		<div class="col-sm-12">
+			<h3> Quotes Added</h3>
+			<div class="progress">
+				<div class="progress">
+					<div class="progress-bar" role="progress" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" :style="{width: ((this.cantQuotes / this.maxQuotes) *100)+'%'}">
+						{{cantQuotes}} / {{maxQuotes}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+export default{
+	props:['maxQuotes', 'cantQuotes'],
+	
+/*	computed:{
+		style: function(){
+			return  {width: ((this.cantQuotes / this.maxQuotes) *100)+'%'}
+		}
+	}*/
+}
+	
+</script>
